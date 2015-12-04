@@ -1,0 +1,56 @@
+//
+//  ViewController.swift
+//  petlike
+//
+//  Created by Thomas Kan on 12/3/15.
+//  Copyright © 2015 Thomas Kan. All rights reserved.
+//
+// from here
+
+import UIKit
+
+class ViewController: UIViewController {
+    @IBOutlet weak var imgTitle: UIImageView!
+
+    @IBOutlet weak var imgPawCat: UIImageView!
+    @IBOutlet weak var btDog: UIButton!
+    @IBOutlet weak var btCat: UIButton!
+    @IBOutlet weak var imgDogMascot: UIImageView!
+    @IBOutlet weak var imgCatMascot: UIImageView!
+    @IBOutlet weak var imgDogPaw: UIImageView!
+    
+    @IBOutlet weak var imgDogCheer: UIImageView!
+    @IBOutlet weak var imgCatPaw: UIImageView!
+    @IBOutlet weak var imgCatCheer: UIImageView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    @IBAction func actDog(sender: AnyObject) {
+
+    btCat.hidden = true
+    btDog.hidden = true
+    imgDogMascot.hidden = false
+    imgTitle.hidden = true
+    imgDogPaw.hidden = true
+    imgCatPaw.hidden = true
+    imgDogCheer.hidden = false
+    }
+    @IBAction func actCat(sender: AnyObject) {
+        btCat.hidden = true
+        btDog.hidden = true
+        imgCatMascot.hidden = false
+        imgTitle.hidden = true
+        imgDogCheer.hidden = true
+        imgDogPaw.hidden = true
+        imgCatPaw.hidden = true
+        imgCatCheer.hidden = false
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+}
